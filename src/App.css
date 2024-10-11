@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.bg-light {
+  background-color: #ffffff; /* Replace #ffffff with the desired background color */
+}
+
+
+.btn-black {
+  background-color: black;
+  color: white;
+}
+
+
+.btn-white {
+  /* background-color: dark; */
+  color: white;
+}
+
+
+.text-white.bg-black::placeholder {
+  color: white;
+}
+
+/* For 'light' mode */
+.text-black.bg-white::placeholder {
+  color: black;
+}
+
+.btn-dark-mode:hover {
+  /* Change the background color and text color as per your requirement */
+  background-color: black;
+  color: white;
+}
+
