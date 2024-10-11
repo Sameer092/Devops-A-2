@@ -1,0 +1,14 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Map port 3000 in the container to port 3000 on your host
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container
+      - /app/node_modules  # Ensure the node_modules directory is not overwritten
+    environment:
+      - NODE_ENV=development  # Set environment to development
+    command: ["npm", "start"]  # Start the React app
